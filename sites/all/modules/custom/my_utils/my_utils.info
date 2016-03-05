@@ -1,0 +1,4 @@
+name = My Utilities
+description = Utility functions
+core = 7.x
+package = Petros

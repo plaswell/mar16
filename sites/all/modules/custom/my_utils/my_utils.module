@@ -1,0 +1,21 @@
+<?php
+/**
+ * Implements hook_field_extra_fields()
+ */
+
+/**
+ * Implements hook_field_extra_fields()
+ */
+function my_utils_field_extra_fields() {
+  $extra = array();
+  $extra['user']['user'] = array(
+    'display' => array(
+      'user_picture' => array(
+        'label' => t('User Picture from Core'),
+        'weight' => -5,
+        'description' => t('This can be anything. I have not seen where this is rendered.'),
+      ),
+    ),
+  );
+  return $extra;
+}
